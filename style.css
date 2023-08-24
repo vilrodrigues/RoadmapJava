@@ -13,3 +13,14 @@ ul {
 img {
     margin-left: -43px;
 }
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #322b29;
+  border: #3b3b6048 solid 1px;
+  background:#fff;
+}
