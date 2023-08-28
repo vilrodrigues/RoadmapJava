@@ -1,20 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.cdnfonts.com/css/taylor-sans" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../style.css" />
     <title>Sintaxe Básica</title>
-</head>
-<body>
+  </head>
+  <body>
     <img
-          src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-black-and-white-1.png"
-          alt="Logo do Java, uma caneca de café e a palavra Java escrita logo abaixo"
-          width="200"
-          height="225"
-        />
-    
-        <h1><b><a href="../../index.html">Início</a></b></h1>
-</body>
+      src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-black-and-white-1.png"
+      alt="Logo do Java, uma caneca de café e a palavra Java escrita logo abaixo"
+      width="200"
+      height="225"
+    />
+
+    <h1>
+      <b><a href="../../index.html">Início</a></b>
+    </h1>
+
+    <h2>Comentários</h2>
+
+    <p>Existem duas formas de se escrever comentários em Java.</p>
+
+    <p>Comentário de multiplas linhas:</p>
+    <ul>
+      <li>/* texto */</li>
+    </ul>
+
+    <p>Comentário de linha única:</p>
+    <ul>
+      <li>// texto</li>
+    </ul>
+
+    <h2>Palavras-chave</h2>
+
+    Java possui 51 palavras reservadas e 16 reservadas contextualmente.
+
+    <p>Reservadas:</p>
+    <ul class="tabela-4-colunas">
+      <li>abstract</li>
+      <li>assert</li>
+      <li>boolean</li>
+      <li>break</li>
+      <li>byte</li>
+      <li>case</li>
+      <li>catch</li>
+      <li>char</li>
+      <li>class</li>
+      <li>const</li>
+      <li>continue</li>
+      <li>default</li>
+      <li>do</li>
+      <li>double</li>
+      <li>else</li>
+      <li>enum</li>
+      <li>extends</li>
+      <li>final</li>
+      <li>finally</li>
+      <li>float</li>
+      <li>for</li>
+      <li>if</li>
+      <li>goto</li>
+      <li>implements</li>
+      <li>import</li>
+      <li>instanceof</li>
+      <li>int</li>
+      <li>interface</li>
+      <li>long</li>
+      <li>native</li>
+      <li>new</li>
+      <li>package</li>
+      <li>private</li>
+      <li>protected</li>
+      <li>public</li>
+      <li>return</li>
+      <li>short</li>
+      <li>static</li>
+      <li>strictfp</li>
+      <li>super</li>
+      <li>switch</li>
+      <li>synchronized</li>
+      <li>this</li>
+      <li>throw</li>
+      <li>throws</li>
+      <li>transient</li>
+      <li>try</li>
+      <li>void</li>
+      <li>volatile</li>
+      <li>while</li>
+      <li>_(underscore)</li>
+    </ul>
+
+    <p>Reservadas contextualmente:</p>
+    <ul class="tabela-4-colunas">
+      <li>exports</li>
+      <li>module</li>
+      <li>non-sealed</li>
+      <li>open</li>
+      <li>opens</li>
+      <li>permits</li>
+      <li>provides</li>
+      <li>record</li>
+      <li>requires</li>
+      <li>sealed</li>
+      <li>to</li>
+      <li>transitive</li>
+      <li>uses</li>
+      <li>var</li>
+      <li>with</li>
+      <li>yield</li>
+    </ul>
+
+    <h2>Literais</h2>
+
+    <p>
+      Literais são representações de dados no código fonte, representam os dados
+      dos tipos primitivos, dos tipos String e dos tipos Nulo.
+    </p>
+
+    <h2>Literais inteiros</h2>
+
+    <p>
+      É possível representar números do tipo integer de três formas em Java:
+      decimal (base 10), octal (base 8) e hexadecimal (base 16). Raramente serão
+      utilizados os dois últimos tipos em situações “normais” de um ambiente de
+      desenvolvimento. Porém, é interessante que sejam estudados, pois, além de
+      conhecimento nunca ser o suficiente, todos os três serão abordados na
+      prova da certificação OCJP 6. Sendo assim, aqueles que estiverem se
+      preparando para a certificação, precisarão, ao menos, conhecê-los.
+    </p>
+
+    <ul>
+      <li>
+        Decimal: São representadas apenas com números, sem prefixo ou sufixo.
+        Exemplo:
+        <p>int altura = 180;</p>
+        <p>int idade = 23;</p>
+      </li>
+      <li>
+        Octal: Utiliza números entre 0 e 7. Para representar os números em
+        octais, deve colocar um “0” na frente de qualquer inteiro. Por exemplo:
+        <p>int x = 06;</p>
+        <p>int y = 07;</p>
+      </li>
+      <li>
+        Hexadecimal: São números contruídos com 16 símbolos distintos. Ainda não
+        foram inventado símbolos numéricos para representar números de 10 a 15.
+        Sendo assim, para contornar este problema de representação, é utilizado
+        em hex as letras alfabéticas para fazer este trabalho. Para contarmos de
+        0 a 15 em hex, utilizariamos a seguinte representação:
+        <p>0 1 2 3 4 5 6 7 8 9 a b c d e f</p>
+        <p>int hex = 0xFacade;</p>
+        <p>int hex2 = 0x9facade;</p>
+      </li>
+      <li>
+        Binário: Um literal binário é um número representado em 0s e 1s (dígitos
+        binários). Java permite que você expresse tipos integrais (byte, short,
+        int e long) em um sistema numérico binário. Para especificar um literal
+        binário, adicione o prefixo 0b ou 0B ao valor integral. Exemplos:
+        <p>byte a1 = 0b011;</p>
+        <p>short b1 = 0b101;</p>
+        <p>int c1 = 0b011;</p>
+        <p>long d1 = 0b0000011111100011;</p>
+      </li>
+    </ul>
+
+    <h2>Literais de ponto flutuante</h2>
+
+    <p>
+      Literais de ponto flutuante são representadas por números, sendo eles
+      decimais, e outros números representando a fração. As literais de ponto
+      flutuante são, por padrão, do tipo primitivo double. Sendo assim, se for
+      tentado colocá-las em uma variável double do jeito “padrão” de sua
+      representação, acontecerá um erro de compilação. Para consertar isto, é
+      necessário declarar o valor como float. Desta forma, o compilador saberá
+      que aquele número de ponto flutuante é, de fato, um float. Não tente
+      utilizar vírgula para separar as frações. Em java, o ponto (.) é utilizado
+      para isto. Exemplo:
+    </p>
+
+    <p>float f = 12.34f;</p>
+
+    <h2>Literais booleanas</h2>
+
+    <p>
+      Literais booleanas são representações de código para os valores booleanos.
+      Sendo assim, seus valores só poderão ser true ou false. Só é permitido true ou false para representar um valor
+      booleano. Não se deve tentar utilizar números ou qualquer outro valor pois
+      a linguagem Java, ou melhor, o compilador não “aceitará”. Exemplo:
+    </p>
+
+    <p>boolean a = true;</p>
+
+    <p>boolean b = false;</p>
+
+    <h2>Literais Char</h2>
+
+    <p>São representadas por um único caractere. Por exemplo:</p>
+
+    <p>char c = ‘a’;</p>
+
+    <p>char n = ‘\u004E’; // Letra E usando Code Point do Unicode</p>
+
+    <h2>Literais String</h2>
+
+    <p>
+      Literais strings representam um valor de um objeto String. 
+      Existem várias maneiras de se
+      representar um objeto String em Java. 
+      A maneira mais utilizada é:
+    </p>
+
+    <p>String nome = “Tiago Argolo”;</p>
+
+    <h2>Literal Null</h2>
+
+    <p>
+      O tipo Null tem apenas um valor, uma referência nula, que é representada
+      pela literal<i>null</i>
+    </p>
+
+    <h2>Separadores</h2>
+
+    Existem 12 separadores em Java, sendo eles:
+    <ul class="tabela-4-colunas">
+      <li>(</li>
+      <li>)</li>
+      <li>{</li>
+      <li>}</li>
+      <li>[</li>
+      <li>]</li>
+      <li>;</li>
+      <li>,</li>
+      <li>...</li>
+      <li>@</li>
+      <li>::</li>
+    </ul>
+
+    <h2>Operadores</h2>
+    Existem 38 caracteres que formam os operadores do Java, sendo eles:
+    <ul class="tabela-4-colunas">
+      <li>=</li>
+      <li>></li>
+      <li><</li>
+      <li>!</li>
+      <li>~</li>
+      <li>?</li>
+      <li>:</li>
+      <li>-></li>
+      <li>==</li>
+      <li>>=</li>
+      <li><=</li>
+      <li>!=</li>
+      <li>&&</li>
+      <li>||</li>
+      <li>++</li>
+      <li>--</li>
+      <li>+</li>
+      <li>-</li>
+      <li>*</li>
+      <li>/</li>
+      <li>&</li>
+      <li>|</li>
+      <li>^</li>
+      <li>%</li>
+      <li><<</li>
+      <li>>></li>
+      <li>>>></li>
+      <li>+=</li>
+      <li>-=</li>
+      <li>*=</li>
+      <li>/=</li>
+      <li>&=</li>
+      <li>|=</li>
+      <li>^=</li>
+      <li>%=</li>
+      <li><<=</li>
+      <li>>>=</li>
+      <li>>>>=</li>
+    </ul>
+  </body>
 </html>

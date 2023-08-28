@@ -1,7 +1,11 @@
 * {
-  font-family: "Taylor Sans", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   text-align: left;
   padding: 10px;
+}
+
+body {
+  width: 70%;
 }
 
 ul {
@@ -11,16 +15,24 @@ ul {
 }
 
 img {
-    margin-left: -43px;
+  margin-left: -43px;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
   color: black;
 }
 
-a:hover{
+a:hover {
   color: #322b29;
   border: #3b3b6048 solid 1px;
-  background:#fff;
+  background: #fff;
 }
+
+.tabela-4-colunas {
+  -webkit-column-count: 4; 
+  -moz-column-count: 4; 
+  column-count: 4;
+}
+
